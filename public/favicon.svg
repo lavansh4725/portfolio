@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#0A0B0E"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="url(#border_grad)" stroke-width="2"/>
+  <path d="M20 18V42C20 44.2091 21.7909 46 24 46H34" stroke="url(#l_grad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 24V40C44 43.3137 41.3137 46 38 46C34.6863 46 32 43.3137 32 40" stroke="url(#j_grad)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="44" cy="18" r="2.5" fill="#60A5FA"/>
+  <defs>
+    <linearGradient id="border_grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="l_grad" x1="20" y1="18" x2="34" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="j_grad" x1="32" y1="24" x2="44" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+</svg>
