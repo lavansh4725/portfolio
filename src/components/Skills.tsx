@@ -7,6 +7,8 @@ import {
   BarChart,
   CheckCircle2,
   Sparkles,
+  Wrench,
+  Cpu,
 } from 'lucide-react';
 
 export const Skills: React.FC = () => {
@@ -14,9 +16,11 @@ export const Skills: React.FC = () => {
 
   const categoryIcons: Record<string, React.ReactNode> = {
     'Programming Languages': <Code2 className="w-4 h-4 text-blue-500" />,
+    'Data Engineering & BI': <Database className="w-4 h-4 text-amber-500" />,
     'Web & Backend Development': <Layers className="w-4 h-4 text-indigo-500" />,
-    'Data Analytics & Engineering Tools': <BarChart className="w-4 h-4 text-cyan-500" />,
-    'Databases & Core CS Concepts': <Database className="w-4 h-4 text-purple-500" />,
+    'Data Analytics & Libraries': <BarChart className="w-4 h-4 text-cyan-500" />,
+    'Developer Tools & Platforms': <Wrench className="w-4 h-4 text-emerald-500" />,
+    'Core Computer Science': <Cpu className="w-4 h-4 text-purple-500" />,
   };
 
   const filteredCategories =
