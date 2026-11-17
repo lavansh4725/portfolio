@@ -8,6 +8,7 @@ import {
   Sparkles,
   MapPin,
   CheckCircle2,
+  BarChart3,
 } from 'lucide-react';
 
 export const Hero: React.FC = () => {
@@ -213,9 +214,9 @@ export const Hero: React.FC = () => {
 
               {/* Floating badge 2 (Bottom Left) */}
               <div className="absolute -bottom-3 -left-3 sm:-left-4 px-3.5 py-1.5 rounded-xl border border-zinc-200 dark:border-white/[0.1] bg-white/95 dark:bg-[#12131a]/90 backdrop-blur-md shadow-lg flex items-center gap-2 transform transition-transform duration-300 hover:scale-105">
-                <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                <BarChart3 className="w-3.5 h-3.5 text-emerald-500" />
                 <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">
-                  Bennett Univ (8.37 CGPA)
+                  Data Analyst
                 </span>
               </div>
             </div>
