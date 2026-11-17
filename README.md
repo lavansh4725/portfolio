@@ -1,6 +1,14 @@
 # Lavansh Jindal — Personal Portfolio Website
 
+[![Live Website](https://img.shields.io/badge/Live%20Website-lavansh--jindal.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://lavansh-jindal.vercel.app)
+[![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
 > A modern, high-performance personal portfolio built with React 19, Vite 8, TypeScript, and Tailwind CSS v4. Designed to showcase production-grade projects, 24+ verified credentials, academic excellence at Bennett University, and full-stack software development & data analytics capabilities.
+
+🌐 **Live URL**: [https://lavansh-jindal.vercel.app](https://lavansh-jindal.vercel.app)
 
 ---
 
@@ -159,7 +167,7 @@ portfolio/
 **Lavansh Jindal**  
 *Data Analyst | Software Developer | Full-Stack Developer | Business Intelligence Analyst*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Lavansh%20Jindal-4F46E5?style=flat&logo=react&logoColor=white)](https://github.com/lavansh4725/portfolio)
+[![Portfolio](https://img.shields.io/badge/Portfolio-lavansh--jindal.vercel.app-000000?style=flat&logo=vercel&logoColor=white)](https://lavansh-jindal.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-lavansh4725-181717?style=flat&logo=github&logoColor=white)](https://github.com/lavansh4725)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Lavansh%20Jindal-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lavansh-jindal/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lavansh__0395-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/lavansh_0395/)
