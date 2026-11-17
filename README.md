@@ -1,4 +1,4 @@
-# Lavansh Jindal — Personal Portfolio Website
+# Lavansh Jindal — Portfolio Website
 
 [![Live Website](https://img.shields.io/badge/Live%20Website-lavansh--jindal.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://lavansh-jindal.vercel.app)
 [![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
@@ -14,7 +14,7 @@
 
 ## 🌟 Overview
 
-This portfolio website presents **Lavansh Jindal's** technical profile, academic credentials at Bennett University (CGPA 8.37, Dean's List), 24+ verified professional certifications (including Elite distinction from IIT Madras), and production-grade engineering projects. It is 100% free, requiring zero paid APIs, zero subscriptions, and zero paid hosting tiers.
+This portfolio website presents my (**Lavansh Jindal**) technical profile, academic credentials at Bennett University (CGPA 8.37, Dean's List), 24+ verified professional certifications (including Elite distinction from IIT Madras), and production-grade engineering projects. It is 100% free, requiring zero paid APIs, zero subscriptions, and zero paid hosting tiers.
 
 ### Target Roles
 - **Data Analyst / Business Intelligence Analyst**
