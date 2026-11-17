@@ -1,31 +1,33 @@
-# Lavansh Jindal — Personal Portfolio Website (v1.0)
+# Lavansh Jindal — Personal Portfolio Website
 
-> A modern, high-performance developer portfolio built with React, Vite, TypeScript, and Tailwind CSS. Designed to showcase real production projects, technical skills, academic excellence, and problem-solving abilities for Software Developer, Full-Stack Engineer, and Data Analyst roles.
+> A modern, high-performance developer portfolio built with React 19, Vite 8, TypeScript, and Tailwind CSS v4. Designed to showcase real production projects, 25+ verified credentials, academic excellence at Bennett University, and full-stack & data analytics capabilities.
 
 ---
 
 ## 🌟 Overview
 
-This portfolio website is crafted to present **Lavansh Jindal's** technical profile, academic credentials at Bennett University (CGPA 8.37, Dean's List), and verified production work. It is 100% free, requiring zero paid APIs, zero subscriptions, and zero paid hosting tiers.
+This portfolio website presents **Lavansh Jindal's** technical profile, academic credentials at Bennett University (CGPA 8.37, Dean's List), 25+ verified professional certifications, and production-grade engineering projects. It is 100% free, requiring zero paid APIs, zero subscriptions, and zero paid hosting tiers.
 
 ### Target Roles
+- **Data Analyst / Business Intelligence Analyst**
 - **Software Developer / Software Engineer**
 - **Full-Stack Developer**
-- **Data Analyst / Business Intelligence Analyst**
+- **Data & Database Architect**
 
 ---
 
 ## 🚀 Key Features
 
 - **Modern Sticky Navigation**: Glassmorphic blur header with section highlighting as you scroll, quick resume download, verified social links, and a responsive mobile drawer.
-- **Hero Section with Real Profile Photo**: Displays Lavansh Jindal's verified LinkedIn profile photograph inside an ambient glowing gradient ring, paired with a typewriter dual-role cycler.
-- **Strictly Two Completed Projects**:
-  1. **RoleReady AI**: Full-stack GenAI interview prep platform featuring React, Vite, Node.js, Express, MongoDB, Google GenAI, JWT, Puppeteer, and Zod.
-  2. **Customer Shopping Behavior Analysis**: End-to-end data analytics and business intelligence pipeline utilizing Python, Pandas, NumPy, MySQL, and Power BI.
+- **Hero Section with Real Profile Photo**: Displays Lavansh Jindal's verified LinkedIn profile photograph inside an ambient glowing gradient ring, paired with a typewriter multi-role cycler.
+- **Three Completed Production Projects**:
+  1. **Enterprise SQL Data Warehouse & ETL Pipeline**: Medallion Architecture (Bronze ➔ Silver ➔ Gold) with Kimball Star Schema views, T-SQL bulk ingestion stored procedures, and automated data quality test suites on Microsoft SQL Server.
+  2. **RoleReady AI**: Full-stack GenAI interview prep platform featuring React, Vite, Node.js, Express, MongoDB, Google GenAI, JWT, Puppeteer, and Zod.
+  3. **Customer Shopping Behavior Analysis**: End-to-end consumer intelligence and BI analytics pipeline utilizing Python, Pandas, NumPy, MySQL, and Power BI.
 - **Interactive Deep-Dive Case Study Modals**: Built using modern web standards (native `<dialog>` elements with backdrop blur, keyboard dismissal, and body scroll containment).
-- **Categorized Technical Skills**: Grounded strictly in verified coursework and projects across Programming Languages, Web & Backend, Data Analytics Tools, and Core CS Fundamentals.
+- **25+ Verified Professional Certifications**: Direct credential verification links from UC San Diego, Johns Hopkins University, Google, IBM, University of Illinois Urbana-Champaign, University of Michigan, Wingspan / Infosys, and MathWorks.
+- **Categorized Technical Skills**: Grounded in verified coursework and projects across Programming Languages, Data Engineering & Analytics Tools, Web & Backend Development, and Databases & Core CS Concepts.
 - **Academic & Scholastic Honors**: Highlights Bennett University, Class XII, Class X, and Dean's List Recognition (2023).
-- **Verified Certifications**: Credentials from UC San Diego, University of Michigan, Google, and Codio.
 - **Coding Profiles**: Direct external links to GitHub, LeetCode, and LinkedIn.
 - **Functional Contact Actions**: One-click copy email/phone buttons with visual feedback, call triggers, direct mailto link, and an interactive message composer.
 - **Dark & Light Mode Support**: Defaults to a deep charcoal aesthetic with smooth light-mode switching persisted in `localStorage`.
@@ -38,7 +40,7 @@ This portfolio website is crafted to present **Lavansh Jindal's** technical prof
 | Layer | Technology | Purpose |
 |---|---|---|
 | **Framework** | React 19 | Declarative component UI |
-| **Tooling & Bundler** | Vite 8 | Lightning-fast HMR and optimized production bundling |
+| **Tooling & Bundler** | Vite 8 | Lightning-fast HMR and optimized production bundling (gzip: ~98 kB) |
 | **Language** | TypeScript | End-to-end type safety and maintainability |
 | **Styling** | Tailwind CSS v4 | High-performance CSS utility system |
 | **Icons** | Lucide React + Custom SVGs | Crisp, lightweight icons |
@@ -83,36 +85,14 @@ Open `http://localhost:4173` to test the production build.
 
 ---
 
-## 🔄 How to Update Assets
-
-### Updating the Resume PDF
-1. Save your new resume PDF with the exact name `resume.pdf`.
-2. Replace `public/resume.pdf`.
-3. Re-run `npm run build` and push to GitHub. The download link will automatically serve the updated version.
-
-### Updating the Profile Photograph
-1. Save your photograph with the exact name `profile.jpg`.
-2. Replace `public/profile.jpg`.
-3. Re-run `npm run build` and push to GitHub.
-
-### Adding Future Projects or Certifications
-1. Open `src/data/portfolioData.ts`.
-2. Append new items into `projectsData`, `certificationsData`, or `educationData`.
-3. The TypeScript interfaces in `src/types/portfolio.ts` will ensure all fields remain type-safe.
-
----
-
 ## 🌐 Free Deployment Guide
 
 ### Option A: Vercel (Recommended — 2 Minutes, Completely Free)
 1. Push your code to GitHub:
    ```bash
-   git init
    git add .
-   git commit -m "Initial commit: Lavansh Jindal Portfolio v1.0"
-   git branch -M main
-   git remote add origin https://github.com/lavansh4725/portfolio.git
-   git push -u origin main
+   git commit -m "feat: add SQL Data Warehouse project and 25+ verified certifications"
+   git push origin main
    ```
 2. Go to [vercel.com](https://vercel.com/) and sign in with GitHub.
 3. Click **"Add New Project"** and select the `portfolio` repository.
@@ -121,25 +101,7 @@ Open `http://localhost:4173` to test the production build.
    - Build Command: `npm run build`
    - Output Directory: `dist`
 5. Click **"Deploy"**.
-6. Your portfolio will be live at `https://your-portfolio-name.vercel.app` at zero cost with automated free SSL.
-
-### Option B: GitHub Pages (Alternative Free Method)
-1. In `vite.config.ts`, ensure `base: '/'` (or `base: '/portfolio/'` if using project pages).
-2. Install `gh-pages`:
-   ```bash
-   npm install -D gh-pages
-   ```
-3. Add deployment scripts in `package.json`:
-   ```json
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-4. Run:
-   ```bash
-   npm run deploy
-   ```
+6. Your portfolio will be live at `https://your-portfolio-name.vercel.app` with automated free SSL.
 
 ---
 
@@ -148,38 +110,50 @@ Open `http://localhost:4173` to test the production build.
 ```text
 portfolio/
 ├── public/
-│   ├── favicon.svg          # Custom LJ monogram brand favicon
-│   ├── profile.jpg          # Real LinkedIn profile picture
-│   └── resume.pdf           # Real verified resume PDF
+│   ├── favicon.svg              # Custom LJ monogram brand favicon
+│   ├── profile.jpg              # Real LinkedIn profile picture
+│   └── resume.pdf               # Real verified resume PDF
 ├── src/
-│   ├── assets/              # Static styling assets
 │   ├── components/
-│   │   ├── About.tsx        # Background, academic journey & stats
-│   │   ├── Certifications.tsx # 5 verified certification cards
-│   │   ├── CodingProfiles.tsx # GitHub, LeetCode, LinkedIn cards
-│   │   ├── Contact.tsx      # Email, phone, mailto composer, copy buttons
-│   │   ├── Education.tsx    # Academic timeline & Dean's List honor
-│   │   ├── Footer.tsx       # Quick navigation, copyright & back-to-top
-│   │   ├── Hero.tsx         # Headline, photo ring, typewriter & CTA
-│   │   ├── Navbar.tsx       # Sticky blur navigation & mobile drawer
-│   │   ├── ProjectModal.tsx # Accessible case study modal
-│   │   ├── Projects.tsx     # Featured RoleReady AI & Shopping Behavior
-│   │   └── SocialIcons.tsx  # Crisp SVG brand icons
+│   │   ├── About.tsx            # Background, academic journey & stats
+│   │   ├── Certifications.tsx   # 25+ verified certification cards with verify URLs
+│   │   ├── CodingProfiles.tsx   # GitHub, LeetCode, LinkedIn cards
+│   │   ├── Contact.tsx          # Email, phone, mailto composer, copy buttons
+│   │   ├── Education.tsx        # Academic timeline & Dean's List honor
+│   │   ├── Footer.tsx           # Quick navigation, copyright & back-to-top
+│   │   ├── Hero.tsx             # Headline, photo ring, typewriter & CTA
+│   │   ├── Navbar.tsx           # Sticky blur navigation & mobile drawer
+│   │   ├── ProjectModal.tsx     # Accessible case study modal
+│   │   ├── Projects.tsx         # 3 Featured projects (SQL DW, RoleReady AI, Shopping Behavior)
+│   │   └── SocialIcons.tsx      # Crisp SVG brand icons
 │   ├── context/
-│   │   └── ThemeContext.tsx # Dark/Light mode provider with localStorage
+│   │   └── ThemeContext.tsx     # Dark/Light mode provider with localStorage
 │   ├── data/
-│   │   └── portfolioData.ts # Primary source of truth for portfolio data
+│   │   └── portfolioData.ts     # Single source of truth for portfolio data
 │   ├── types/
-│   │   └── portfolio.ts     # TypeScript data contracts & models
-│   ├── App.tsx              # Root coordinator & scroll spy
-│   ├── index.css            # Tailwind CSS v4 & custom animations
-│   └── main.tsx             # React DOM entrypoint
-├── index.html               # Semantic HTML shell, SEO & Open Graph
-├── vite.config.ts           # Vite + Tailwind CSS v4 configuration
-└── package.json             # Scripts & free open-source dependencies
+│   │   └── portfolio.ts         # TypeScript data contracts & models
+│   ├── App.tsx                  # Root coordinator & scroll spy
+│   ├── index.css                # Tailwind CSS v4 & custom animations
+│   └── main.tsx                 # React DOM entrypoint
+├── index.html                   # Semantic HTML shell, SEO & Open Graph
+├── vite.config.ts               # Vite + Tailwind CSS v4 configuration
+└── package.json                 # Scripts & free open-source dependencies
 ```
 
 ---
 
-## 📄 License
-This project is open-source and free to use under the [MIT License](LICENSE).
+<div align="center">
+
+### 👨‍💻 Connect with the Author
+
+**Lavansh Jindal**  
+*Data Analyst | Software Developer | Full-Stack Developer | Business Intelligence Analyst*
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Lavansh%20Jindal-4F46E5?style=flat&logo=react&logoColor=white)](https://github.com/lavansh4725/portfolio)
+[![GitHub](https://img.shields.io/badge/GitHub-lavansh4725-181717?style=flat&logo=github&logoColor=white)](https://github.com/lavansh4725)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Lavansh%20Jindal-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lavansh-jindal/)
+[![Email](https://img.shields.io/badge/Email-lavanshjindal47%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:lavanshjindal47@gmail.com)
+
+<sub>*"Architecting scalable, resilient data pipelines and dimensional warehouses that transform operational data into trusted business value."*</sub>
+
+</div>

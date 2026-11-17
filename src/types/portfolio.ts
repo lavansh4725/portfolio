@@ -27,7 +27,7 @@ export interface ProjectDetail {
   id: string;
   title: string;
   category: string;
-  badgeType: 'engineering' | 'analytics';
+  badgeType: 'engineering' | 'analytics' | 'warehouse';
   shortDescription: string;
   technologies: string[];
   githubUrl: string;
@@ -47,6 +47,9 @@ export interface ProjectDetail {
     dataPipeline?: string;
     sqlAndMetrics?: string;
     dashboardDesign?: string;
+    medallionArchitecture?: string;
+    storedProcedures?: string;
+    dataQuality?: string;
   };
   challengesAndSolutions: {
     challenge: string;
@@ -76,6 +79,10 @@ export interface CertificationItem {
   title: string;
   issuer: string;
   platform?: string;
+  issueDate?: string;
+  credentialId?: string;
+  verifyUrl?: string;
+  category: 'Algorithms & Core CS' | 'Data Science & AI' | 'Systems & Networking' | 'Project & Business' | 'Mathematics & Tools';
   skillsCovered: string[];
 }
 

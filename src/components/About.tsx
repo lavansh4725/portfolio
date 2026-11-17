@@ -7,6 +7,7 @@ import {
   GraduationCap,
   Sparkles,
   Terminal,
+  Database,
 } from 'lucide-react';
 
 export const About: React.FC = () => {
@@ -102,9 +103,9 @@ export const About: React.FC = () => {
           <div className="lg:col-span-7 space-y-4">
             {aboutContent.corePillars.map((pillar, idx) => {
               const icons = [
-                <Code key="0" className="w-5 h-5 text-blue-500" />,
-                <BarChart3 key="1" className="w-5 h-5 text-indigo-500" />,
-                <Terminal key="2" className="w-5 h-5 text-purple-500" />,
+                <Database key="0" className="w-5 h-5 text-amber-500" />,
+                <Code key="1" className="w-5 h-5 text-blue-500" />,
+                <BarChart3 key="2" className="w-5 h-5 text-indigo-500" />,
               ];
 
               return (
