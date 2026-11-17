@@ -17,7 +17,7 @@
 
 ### A. Root Application Coordinator (`src/App.tsx`)
 - **What it does**: Orchestrates the entire application layout, initializes the theme provider, and monitors the user's scroll position to highlight the active navbar link.
-- **Scroll Spy**: Tracks element `offsetTop` thresholds via passive listeners, syncing the active navigation item dynamically.
+- **Dark/Light Theme**: Configured with `bg-slate-50 text-zinc-900 dark:bg-[#0a0b0e] dark:text-zinc-100`, providing high contrast and visual clarity across all devices and themes.
 
 ---
 
@@ -26,7 +26,6 @@
   1. **Enterprise SQL Data Warehouse & ETL Pipeline**: Medallion Architecture on Microsoft SQL Server consolidating CRM and ERP systems into Kimball Star Schema views with T-SQL stored procedures and automated QA suites.
   2. **RoleReady AI**: Full-stack GenAI interview prep platform featuring React, Vite, Node.js, Express, MongoDB, Google GenAI, JWT, Puppeteer, and Zod.
   3. **Customer Shopping Behavior Analysis**: End-to-end data analytics and business intelligence pipeline utilizing Python, Pandas, NumPy, MySQL, and Power BI.
-- **Custom UI Previews**: Each card features a custom, high-fidelity UI mockup thumbnail simulating a running platform (Medallion pipeline stages for SQL Data Warehouse; terminal engine for RoleReady AI; Power BI KPI matrix for Customer Shopping Behavior).
 
 ---
 
@@ -36,31 +35,21 @@
   - Implements the native HTML `<dialog>` element.
   - Triggered with `dialogRef.current.showModal()`.
   - Dismissible via keyboard `Esc` key or backdrop clicks.
-  - Contains tabbed navigation:
-    - **Overview & Objectives**: Business problem, core deliverables, and highlights.
-    - **System Architecture**: Execution workflow, component hierarchy, and metrics.
-    - **Technical Stack**: Deep breakdown of Medallion architecture, stored procedures, data quality tests, frontend, backend, database, and AI subsystems.
-    - **Challenges & Learnings**: Real engineering hurdles encountered and technical resolutions.
+  - Subsystems: Medallion Architecture, Stored Procedures, Data Quality Tests, Frontend, Backend, Database, and AI.
 
 ---
 
-### D. Verified Certifications (`src/components/Certifications.tsx`)
-- **What it does**: Displays the 25+ verified credentials earned across world-class institutions including UC San Diego, Johns Hopkins University, Google, IBM, University of Michigan, UIUC, Wingspan / Infosys, and MathWorks.
+### D. Highlighted Elite Credential & Certifications (`src/components/Certifications.tsx`)
+- **Featured Elite Banner**:
+  - **Business Intelligence & Analytics** — **IIT Madras & NPTEL**
+  - **Elite Distinction with Consolidated 83% (Assignments: 25/25, 100% Perfect Score)**
+  - Roll No: `NPTEL26CS64S162600964`
+  - Direct Verification: `https://nptel.ac.in/noc/`
 - **Domain Categories**:
-  1. **Algorithms & Core CS**: Algorithmic Toolbox (UCSD), Data Structures (UCSD), Python Data Structures (UMich), C++ Basics (Codio), DSA (Wingspan).
-  2. **Data Science & AI**: PySpark & AWS (Wingspan), Statistics for Data Science (IBM), Data Visualization (UIUC), Text Mining and Analytics (UIUC), Intro to AI (IBM), Intro to Neural Networks (JHU), Advanced Neural Network Techniques (JHU), AI Ethics (JHU), Time Series Analysis (Wingspan), Machine Learning (Wingspan).
-  3. **Systems & Networking**: Operating Systems (Google), Fundamentals of Network Communication (CU), Peer-to-Peer & LAN (CU), Automata Theory (Wingspan).
-  4. **Project Management & Business**: Project Initiation (Google), Intro to Project Management (IBM), Business Presentations (Wingspan), Java for Beginners (Coursera).
-  5. **Mathematics & Tools**: MATLAB Fundamentals (MathWorks), Symbolic Math (MathWorks).
-- **Direct Credential Links**: Provides direct links to verify credentials on `https://coursera.org/verify/<ID>` and issuer portals.
-
----
-
-### E. Contact Section (`src/components/Contact.tsx`)
-- **100% Free & Functional Mailto Composer**:
-  - Dynamic mailto construction with URI-encoded subject and body parameters, opening the user's native email client without relying on paid third-party forms.
-- **Quick Action Copy Buttons**:
-  - One-click copy for email (`lavanshjindal47@gmail.com`) and phone (`+91 7878685796`) with temporary visual checkmarks.
+  1. **Data Science & AI**: IIT Madras Elite Business Intelligence, PySpark & AWS, IBM Statistics, UIUC Data Visualization, UIUC Text Mining, IBM AI, JHU Neural Networks & Ethics, Wingspan Time Series, Wingspan ML.
+  2. **Algorithms & Core CS**: UCSD Algorithmic Toolbox, UCSD Data Structures, UMich Python Data Structures, Codio C++ Basics, Wingspan DSA.
+  3. **Systems & Networking**: Google OS, CU Network Communication, CU Peer-to-Peer & LAN, Wingspan Automata.
+  4. **Project Management & Business**: Google Project Initiation, IBM Project Management, Wingspan Business Presentations, Coursera Java.
 
 ---
 
@@ -74,8 +63,9 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-Lavansh%20Jindal-4F46E5?style=flat&logo=react&logoColor=white)](https://github.com/lavansh4725/portfolio)
 [![GitHub](https://img.shields.io/badge/GitHub-lavansh4725-181717?style=flat&logo=github&logoColor=white)](https://github.com/lavansh4725)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Lavansh%20Jindal-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lavansh-jindal/)
-[![Email](https://img.shields.io/badge/Email-lavanshjindal47%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:lavanshjindal47@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-lavansh__0395-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/lavansh_0395/)
+[![Email](https://img.shields.io/badge/Email-lavansh4725jindal%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:lavansh4725jindal@gmail.com)
 
-<sub>*"Architecting scalable, resilient data pipelines and dimensional warehouses that transform operational data into trusted business value."*</sub>
+<sub>*"Bridging full-stack software development and data analytics — architecting resilient dimensional data warehouses, intelligent GenAI platforms, and high-impact business intelligence."*</sub>
 
 </div>

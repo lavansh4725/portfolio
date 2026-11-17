@@ -49,9 +49,9 @@ export function PortfolioContent() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#0a0b0e] text-zinc-100 dark:bg-[#0a0b0e] dark:text-zinc-100 transition-colors duration-300">
+    <div className="relative min-h-screen bg-slate-50 text-zinc-900 dark:bg-[#0a0b0e] dark:text-zinc-100 transition-colors duration-300">
       {/* Background grid texture overlay */}
-      <div className="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0" />
+      <div className="fixed inset-0 pointer-events-none z-0 light-grid-pattern opacity-70 dark:bg-grid-pattern dark:opacity-40 transition-opacity" />
 
       {/* Main sticky navigation */}
       <Navbar activeSection={activeSection} />

@@ -190,7 +190,7 @@ export const Hero: React.FC = () => {
             <div className="relative group">
               {/* Decorative border ring */}
               <div className="p-1.5 rounded-full bg-gradient-to-tr from-blue-500 via-indigo-500 to-purple-500 shadow-2xl shadow-blue-500/20 group-hover:shadow-blue-500/35 transition-all duration-500 group-hover:scale-[1.02]">
-                <div className="p-1 rounded-full bg-[#0a0b0e] dark:bg-[#0a0b0e]">
+                <div className="p-1 rounded-full bg-white dark:bg-[#0a0b0e]">
                   {/* Real LinkedIn Profile Picture */}
                   <img
                     src={personalInfo.profileImageUrl}

@@ -21,7 +21,7 @@ graph TD
     App --> Skills[Skills Component]
     App --> Projects[Projects Component - 3 Production Projects]
     App --> Education[Education & Honors Component]
-    App --> Certifications[Certifications Component - 25+ Verified]
+    App --> Certifications[Certifications Component - Elite IIT Madras & 24+ Verified]
     App --> Profiles[Coding Profiles Component]
     App --> Contact[Contact & Mail Composer Component]
     App --> Footer[Footer Component]
@@ -63,7 +63,7 @@ App (Root Coordinator)
  │    │    ├── CTAs (Projects, Resume, Contact)
  │    │    └── Profile Image Glowing Ring
  │    ├── About (Background & Academic Pillars)
- │    │    ├── Quick Stats Metrics Grid (CGPA, Dean's List, 3 Projects, 25+ Certs)
+ │    │    ├── Quick Stats Metrics Grid (CGPA, Dean's List, 3 Projects, 24+ Certs)
  │    │    ├── Engineering Philosophy Card
  │    │    └── Core Capability Pillars (Data Warehousing, Full-Stack, BI Analytics)
  │    ├── Skills (Verified Tooling)
@@ -77,7 +77,7 @@ App (Root Coordinator)
  │    ├── Education (Academic Qualifications & Honors)
  │    │    ├── Timeline: Bennett University, Class XII, Class X
  │    │    └── Scholastic Honors Card (Dean's List 2023)
- │    ├── Certifications (25+ Verified Credentials across 5 Domain Categories)
+ │    ├── Certifications (Featured Elite Banner + 24 Verified Credentials)
  │    ├── CodingProfiles (GitHub, LeetCode, LinkedIn Cards)
  │    └── Contact (Interaction & Inquiries)
  │         ├── Direct Contact Cards (Email & Phone with Copy Actions)
@@ -111,3 +111,22 @@ In conformance with **Modern Web Guidance**:
     overscroll-behavior: contain;
   }
   ```
+
+---
+
+<div align="center">
+
+### 👨‍💻 Connect with the Author
+
+**Lavansh Jindal**  
+*Data Analyst | Software Developer | Full-Stack Developer | Business Intelligence Analyst*
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Lavansh%20Jindal-4F46E5?style=flat&logo=react&logoColor=white)](https://github.com/lavansh4725/portfolio)
+[![GitHub](https://img.shields.io/badge/GitHub-lavansh4725-181717?style=flat&logo=github&logoColor=white)](https://github.com/lavansh4725)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Lavansh%20Jindal-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lavansh-jindal/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-lavansh__0395-FFA116?style=flat&logo=leetcode&logoColor=white)](https://leetcode.com/u/lavansh_0395/)
+[![Email](https://img.shields.io/badge/Email-lavansh4725jindal%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:lavansh4725jindal@gmail.com)
+
+<sub>*"Bridging full-stack software development and data analytics — architecting resilient dimensional data warehouses, intelligent GenAI platforms, and high-impact business intelligence."*</sub>
+
+</div>

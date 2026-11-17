@@ -8,22 +8,27 @@ import {
   ExternalLink,
   ShieldCheck,
   Hash,
+  Medal,
+  CheckCircle2,
+  GraduationCap,
 } from 'lucide-react';
 
 export const Certifications: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
+  const featuredCert = certificationsData.find((c) => c.isFeatured);
+
   const categories = [
     { id: 'all', label: 'All Credentials', count: certificationsData.length },
-    {
-      id: 'Algorithms & Core CS',
-      label: 'Algorithms & Core CS',
-      count: certificationsData.filter((c) => c.category === 'Algorithms & Core CS').length,
-    },
     {
       id: 'Data Science & AI',
       label: 'Data Science & AI',
       count: certificationsData.filter((c) => c.category === 'Data Science & AI').length,
+    },
+    {
+      id: 'Algorithms & Core CS',
+      label: 'Algorithms & Core CS',
+      count: certificationsData.filter((c) => c.category === 'Algorithms & Core CS').length,
     },
     {
       id: 'Systems & Networking',
@@ -34,11 +39,6 @@ export const Certifications: React.FC = () => {
       id: 'Project & Business',
       label: 'Project & Business',
       count: certificationsData.filter((c) => c.category === 'Project & Business').length,
-    },
-    {
-      id: 'Mathematics & Tools',
-      label: 'Math & Tools',
-      count: certificationsData.filter((c) => c.category === 'Mathematics & Tools').length,
     },
   ];
 
@@ -52,18 +52,147 @@ export const Certifications: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center space-y-3 mb-12">
+        <div className="flex flex-col items-center text-center space-y-3 mb-14">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/50">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>25+ Verified Credentials</span>
+            <span>Accredited Technical Honors</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
             Licenses & Professional Certifications
           </h2>
           <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 max-w-2xl">
-            Verified technical credentials and specialized coursework completed across world-class institutions including UC San Diego, Johns Hopkins University, Google, IBM, University of Michigan, and UIUC.
+            Verified professional credentials earned across premier institutions including IIT Madras, UC San Diego, Johns Hopkins University, Google, IBM, and UIUC.
           </p>
         </div>
+
+        {/* --- HIGH-IMPORTANCE FEATURED CERTIFICATE BANNER --- */}
+        {featuredCert && (
+          <div className="mb-16 relative group">
+            {/* Ambient glow behind card */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-indigo-600/20 to-purple-600/20 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity pointer-events-none" />
+
+            <div className="relative rounded-3xl p-6 sm:p-9 bg-gradient-to-br from-white via-blue-50/40 to-indigo-50/30 dark:from-[#11131e] dark:via-[#0e101a] dark:to-[#141224] border-2 border-blue-500/40 dark:border-blue-500/30 shadow-xl overflow-hidden">
+              
+              {/* Top Accent Ribbon */}
+              <div className="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-zinc-200/80 dark:border-white/[0.08]">
+                <div className="flex items-center gap-2.5">
+                  <span className="p-2.5 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/30">
+                    <Medal className="w-6 h-6 text-amber-300" />
+                  </span>
+                  <div>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-extrabold tracking-wider uppercase text-blue-700 dark:text-blue-400 bg-blue-100 dark:bg-blue-950/70 px-2.5 py-0.5 rounded-full border border-blue-300 dark:border-blue-800/60">
+                      ★ Featured Top Credential — Elite Distinction
+                    </span>
+                    <span className="block text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">
+                      Funded by Ministry of Education (MoE), Government of India • 4 Recommended Credits
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-300 dark:border-emerald-800/50">
+                    <ShieldCheck className="w-4 h-4" />
+                    <span>Verified Elite</span>
+                  </span>
+                </div>
+              </div>
+
+              {/* Main Banner Content */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-6 items-center">
+                <div className="lg:col-span-8 space-y-4">
+                  <div>
+                    <div className="flex items-center gap-2 text-xs font-semibold text-blue-600 dark:text-blue-400 mb-1">
+                      <GraduationCap className="w-4 h-4" />
+                      <span>Indian Institute of Technology Madras (IIT Madras) & NPTEL</span>
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight">
+                      {featuredCert.title}
+                    </h3>
+                  </div>
+
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-2xl">
+                    Awarded Elite certification for comprehensive mastery of business intelligence architecture, dimensional modeling, decision support analytics, and enterprise data mining after a rigorous 12-week curriculum evaluated by IIT Madras faculty.
+                  </p>
+
+                  {/* Score Highlights Badges */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
+                    <div className="p-3 rounded-xl bg-white dark:bg-white/[0.04] border border-blue-200 dark:border-white/[0.08] shadow-sm text-center">
+                      <span className="block text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                        Consolidated
+                      </span>
+                      <span className="text-lg font-extrabold text-blue-600 dark:text-blue-400">
+                        83% (Elite)
+                      </span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white dark:bg-white/[0.04] border border-blue-200 dark:border-white/[0.08] shadow-sm text-center">
+                      <span className="block text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                        Assignments
+                      </span>
+                      <span className="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">
+                        25 / 25 (100%)
+                      </span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white dark:bg-white/[0.04] border border-blue-200 dark:border-white/[0.08] shadow-sm text-center">
+                      <span className="block text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                        Proctored Exam
+                      </span>
+                      <span className="text-lg font-extrabold text-zinc-800 dark:text-zinc-200">
+                        57.6 / 75
+                      </span>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white dark:bg-white/[0.04] border border-blue-200 dark:border-white/[0.08] shadow-sm text-center">
+                      <span className="block text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                        Roll Number
+                      </span>
+                      <span className="text-xs font-mono font-bold text-zinc-700 dark:text-zinc-300 block truncate" title="NPTEL26CS64S162600964">
+                        NPTEL26CS64...
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Skills tags */}
+                  <div className="flex flex-wrap gap-1.5 pt-2">
+                    {featuredCert.skillsCovered.map((skill, sIdx) => (
+                      <span
+                        key={sIdx}
+                        className="px-2.5 py-1 rounded-lg text-xs font-medium bg-white dark:bg-white/[0.05] text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-white/[0.08] flex items-center gap-1"
+                      >
+                        <CheckCircle2 className="w-3 h-3 text-blue-500" />
+                        <span>{skill}</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Right verification CTA Box */}
+                <div className="lg:col-span-4 flex flex-col justify-center items-center lg:items-end text-center lg:text-right space-y-4 p-6 rounded-2xl bg-white/80 dark:bg-white/[0.02] border border-blue-100 dark:border-white/[0.06]">
+                  <div className="space-y-1">
+                    <span className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 block">
+                      Credential Roll No
+                    </span>
+                    <span className="text-xs font-mono font-bold text-zinc-900 dark:text-zinc-100 bg-zinc-100 dark:bg-white/[0.08] px-2.5 py-1 rounded select-all block">
+                      {featuredCert.credentialId}
+                    </span>
+                    <span className="text-[11px] text-zinc-400 block pt-1">
+                      Jan–Apr 2026 (12-Week Intensive)
+                    </span>
+                  </div>
+
+                  <a
+                    href={featuredCert.verifyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-lg shadow-blue-500/25 active:scale-95 transition-all"
+                  >
+                    <span>Verify with IIT Madras NPTEL</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        )}
 
         {/* Category Filter Pills */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
@@ -75,7 +204,7 @@ export const Certifications: React.FC = () => {
               className={`px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-1.5 ${
                 activeCategory === cat.id
                   ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25'
-                  : 'bg-white dark:bg-[#12131b] text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white border border-zinc-200/80 dark:border-white/[0.08]'
+                  : 'bg-white dark:bg-[#12131b] text-zinc-700 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white border border-zinc-200/80 dark:border-white/[0.08]'
               }`}
             >
               <span>{cat.label}</span>
@@ -97,20 +226,28 @@ export const Certifications: React.FC = () => {
           {filteredCerts.map((cert, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-white dark:bg-[#11131a] border border-zinc-200/80 dark:border-white/[0.08] shadow-sm hover:border-blue-500/40 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group"
+              className={`p-6 rounded-2xl bg-white dark:bg-[#11131a] border transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-lg ${
+                cert.isFeatured
+                  ? 'border-blue-500/50 dark:border-blue-500/40 ring-1 ring-blue-500/30'
+                  : 'border-zinc-200/80 dark:border-white/[0.08] hover:border-blue-500/40'
+              }`}
             >
               <div className="space-y-4">
                 <div className="flex items-start justify-between gap-2">
-                  <div className="p-2.5 rounded-xl bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 border border-blue-200/60 dark:border-blue-800/40 shrink-0">
-                    <Award className="w-5 h-5" />
+                  <div className={`p-2.5 rounded-xl border shrink-0 ${
+                    cert.isFeatured
+                      ? 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-400/40'
+                      : 'bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 border-blue-200/60 dark:border-blue-800/40'
+                  }`}>
+                    {cert.isFeatured ? <Medal className="w-5 h-5 text-amber-500" /> : <Award className="w-5 h-5" />}
                   </div>
                   <div className="flex flex-col items-end gap-1">
                     <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800/40">
                       <ShieldCheck className="w-3 h-3" />
-                      <span>Verified</span>
+                      <span>{cert.distinction ? 'Elite' : 'Verified'}</span>
                     </span>
                     {cert.issueDate && (
-                      <span className="flex items-center gap-1 text-[11px] text-zinc-400 font-medium">
+                      <span className="flex items-center gap-1 text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">
                         <Calendar className="w-3 h-3" />
                         <span>{cert.issueDate}</span>
                       </span>
@@ -122,14 +259,20 @@ export const Certifications: React.FC = () => {
                   <h3 className="font-bold text-base text-zinc-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-snug">
                     {cert.title}
                   </h3>
-                  <p className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
+                  <p className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 flex items-center gap-1.5">
                     <BookOpen className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
                     <span>{cert.issuer}</span>
                   </p>
                 </div>
 
+                {cert.score && (
+                  <div className="text-[11px] font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-950/50 px-2.5 py-1 rounded border border-blue-200 dark:border-blue-800/40">
+                    ★ {cert.score}
+                  </div>
+                )}
+
                 {cert.credentialId && (
-                  <div className="flex items-center gap-1 text-[11px] font-mono text-zinc-500 dark:text-zinc-400 bg-zinc-50 dark:bg-white/[0.03] px-2 py-1 rounded border border-zinc-200/60 dark:border-white/[0.04]">
+                  <div className="flex items-center gap-1 text-[11px] font-mono text-zinc-600 dark:text-zinc-400 bg-zinc-50 dark:bg-white/[0.03] px-2 py-1 rounded border border-zinc-200/60 dark:border-white/[0.04]">
                     <Hash className="w-3 h-3 text-zinc-400" />
                     <span>ID: {cert.credentialId}</span>
                   </div>

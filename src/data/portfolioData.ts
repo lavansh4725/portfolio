@@ -19,7 +19,7 @@ export const personalInfo: PersonalInfo = {
   ],
   bio: "I'm a Computer Science Engineering undergraduate passionate about building practical software solutions, solving complex problems, and transforming data into meaningful insights.",
   location: 'Greater Noida, Uttar Pradesh, India',
-  email: 'lavanshjindal47@gmail.com',
+  email: 'lavansh4725jindal@gmail.com',
   phone: '+91 7878685796',
   githubUrl: 'https://github.com/lavansh4725/',
   linkedinUrl: 'https://www.linkedin.com/in/lavansh-jindal/',
@@ -52,7 +52,7 @@ export const aboutContent = {
     { label: 'CGPA', value: '8.37 / 10', highlight: 'Bennett University' },
     { label: 'Honor', value: "Dean's List", highlight: 'Academic Excellence (2023)' },
     { label: 'Production Projects', value: '3 Case Studies', highlight: 'Data Warehouse, GenAI, & BI' },
-    { label: 'Verified Certifications', value: '25+ Credentials', highlight: 'UCSD, Google, IBM, JHU, UMich' },
+    { label: 'Verified Certifications', value: '24+ Credentials', highlight: 'IIT Madras Elite, UCSD, Google, JHU' },
   ],
 };
 
@@ -414,6 +414,27 @@ export const achievementsData: AchievementItem[] = [
 ];
 
 export const certificationsData: CertificationItem[] = [
+  // --- High Importance / Elite Featured Credential ---
+  {
+    title: 'Business Intelligence & Analytics',
+    issuer: 'NPTEL — Indian Institute of Technology Madras (IIT Madras) & MoE, Govt. of India',
+    platform: 'NPTEL / SWAYAM',
+    issueDate: 'Jan–Apr 2026 (12-Week Course)',
+    credentialId: 'NPTEL26CS64S162600964',
+    verifyUrl: 'https://nptel.ac.in/noc/',
+    category: 'Data Science & AI',
+    isFeatured: true,
+    distinction: 'Elite (Top Distinction)',
+    score: 'Consolidated: 83% | Assignments: 25/25 (100%) | Proctored Exam: 57.6/75',
+    skillsCovered: [
+      'Business Intelligence Architecture',
+      'Dimensional Data Modeling',
+      'Data Mining & Warehousing',
+      'Predictive & Prescriptive Analytics',
+      'Executive KPI Dashboards',
+      'Decision Support Systems',
+    ],
+  },
   // --- Computer Science & Algorithms ---
   {
     title: 'Algorithmic Toolbox',
@@ -644,24 +665,6 @@ export const certificationsData: CertificationItem[] = [
     verifyUrl: 'https://coursera.org/verify/RVGDCW7CCX9B',
     category: 'Project & Business',
     skillsCovered: ['Core Java Syntax', 'OOP Concepts', 'Methods & Classes', 'Debugging'],
-  },
-
-  // --- Mathematics & Computational Tools ---
-  {
-    title: 'MATLAB Fundamentals',
-    issuer: 'MathWorks',
-    platform: 'MathWorks Training',
-    issueDate: 'November 2023',
-    category: 'Mathematics & Tools',
-    skillsCovered: ['Numerical Computing', 'Matrix Operations', 'Data Analysis & Plotting', 'Algorithm Prototyping'],
-  },
-  {
-    title: 'Introduction to Symbolic Math with MATLAB',
-    issuer: 'MathWorks',
-    platform: 'MathWorks Training',
-    issueDate: 'November 2023',
-    category: 'Mathematics & Tools',
-    skillsCovered: ['Symbolic Math Toolbox', 'Algebraic Equation Solvers', 'Calculus Operations', 'Mathematical Modeling'],
   },
 ];
 

@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0a0b0e]/85 dark:bg-[#0a0b0e]/85 bg-white/90 backdrop-blur-md border-b border-zinc-200/50 dark:border-white/[0.08] shadow-sm dark:shadow-2xl'
+          ? 'bg-white/90 dark:bg-[#0a0b0e]/85 backdrop-blur-md border-b border-zinc-200/80 dark:border-white/[0.08] shadow-sm dark:shadow-2xl'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
@@ -57,8 +57,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           aria-label="Lavansh Jindal Homepage"
         >
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 p-[1.5px] shadow-md shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all duration-300 group-hover:scale-105">
-            <div className="w-full h-full bg-[#0d0e12] dark:bg-[#0d0e12] bg-white rounded-[10px] flex items-center justify-center">
-              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 text-base tracking-wider">
+            <div className="w-full h-full bg-slate-100 dark:bg-[#0d0e12] rounded-[10px] flex items-center justify-center">
+              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-base tracking-wider">
                 LJ
               </span>
             </div>

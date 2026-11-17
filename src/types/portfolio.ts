@@ -82,8 +82,11 @@ export interface CertificationItem {
   issueDate?: string;
   credentialId?: string;
   verifyUrl?: string;
-  category: 'Algorithms & Core CS' | 'Data Science & AI' | 'Systems & Networking' | 'Project & Business' | 'Mathematics & Tools';
+  category: 'Algorithms & Core CS' | 'Data Science & AI' | 'Systems & Networking' | 'Project & Business';
   skillsCovered: string[];
+  isFeatured?: boolean;
+  distinction?: string;
+  score?: string;
 }
 
 export interface CodingProfile {
