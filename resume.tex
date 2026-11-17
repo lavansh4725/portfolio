@@ -19,12 +19,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% 0.5-inch margins: covers single page completely from top to bottom
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.0in}
-\addtolength{\topmargin}{-0.5in}
-\addtolength{\textheight}{1.0in}
+% 0.4-inch margins: covers single page completely from top to bottom without trailing white space
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
 
 \urlstyle{same}
 
@@ -34,7 +34,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-3pt}\scshape\raggedright\large
+  \vspace{-2pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 % Ensure generated PDF is machine readable / ATS parsable
@@ -43,22 +43,24 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1.5pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1.5pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-4pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+% Two-row project heading: Line 1 = Title & Link, Line 2 = Technologies (Prevents text overlap!)
+\newcommand{\resumeProjectHeading}[3]{
     \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #3 \\
+      \textit{\small #2} & \\
     \end{tabular*}\vspace{-4pt}
 }
 
@@ -66,10 +68,10 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt, topsep=2pt]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=-1.5pt, topsep=1pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-0.5pt, topsep=1.5pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=-1pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 \begin{document}
 
@@ -78,19 +80,19 @@
     \textbf{\Huge \scshape Lavansh Jindal} \\ \vspace{3pt}
     \small (+91) 7878685796 $|$
     \href{mailto:lavansh4725jindal@gmail.com}{\underline{lavansh4725jindal@gmail.com}} $|$
-    \href{https://lavansh-jindal.vercel.app}{\underline{lavansh-jindal.vercel.app}} \\ \vspace{2pt}
-    \href{https://linkedin.com/in/lavansh-jindal}{\underline{linkedin.com/in/lavansh-jindal}} $|$
-    \href{https://github.com/lavansh4725}{\underline{github.com/lavansh4725}} $|$
-    \href{https://leetcode.com/u/lavansh_0395/}{\underline{leetcode.com/u/lavansh\_0395}}
+    \href{https://lavansh-jindal.vercel.app}{\underline{Portfolio}} $|$
+    \href{https://www.linkedin.com/in/lavansh-jindal/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/lavansh4725}{\underline{GitHub}} $|$
+    \href{https://leetcode.com/u/lavansh_0395/}{\underline{LeetCode}}
 \end{center}
-\vspace{-8pt}
+\vspace{-6pt}
 
 %-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
 \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
-    \small{\item{Computer Science Engineering undergraduate at Bennett University (CGPA 8.37) targeting \textbf{Software Developer}, \textbf{Full-Stack Engineer}, and \textbf{Data / BI Analyst} roles. Proven track record architecting dimensional data warehouses with Kimball Star Schema, full-stack GenAI web platforms with React and Node.js, and executive Power BI analytics dashboards. Strong foundation in data structures, algorithms, and end-to-end SDLC from requirements analysis to cloud deployment.}}
+    \small{\item{Computer Science Engineering undergraduate at Bennett University (CGPA 8.37) targeting \textbf{Software Developer}, \textbf{Full-Stack Engineer}, and \textbf{Data / BI Analyst} roles. Proven track record architecting dimensional enterprise data warehouses with Kimball Star Schema, full-stack GenAI web platforms with React and Node.js, and executive Power BI analytics dashboards. Strong foundation in data structures, algorithms, and end-to-end SDLC from requirements analysis to cloud deployment.}}
 \end{itemize}
-\vspace{-6pt}
+\vspace{-4pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -105,52 +107,58 @@
       {St. Peter's Senior Secondary School}{Bharatpur, Rajasthan, India}
       {Class X (CBSE Secondary School Examination) -- \textbf{95.2\%}}{2021}
   \resumeSubHeadingListEnd
-\vspace{-4pt}
+\vspace{-3pt}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, topsep=1pt]
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=1.5pt, topsep=1.5pt]
     \small{\item{
      \textbf{Programming Languages}{: C++, Python, SQL (T-SQL, MySQL), Java, JavaScript (ES6+), HTML5, CSS3} \\[2.5pt]
-     \textbf{Data Engineering \& BI}{: Dimensional Modeling, Kimball Star Schema, Medallion Architecture, ETL Pipelines, Power BI, DAX} \\[2.5pt]
+     \textbf{Data Engineering \& BI}{: Dimensional Modeling (Kimball Star Schema), Medallion Architecture, ETL Pipelines, Stored Procedures, Microsoft Power BI, DAX} \\[2.5pt]
      \textbf{Web \& Backend Development}{: React.js, Vite, Node.js, Express.js, RESTful APIs, JWT Authentication, MongoDB, Zod} \\[2.5pt]
-     \textbf{Data Analytics \& Libraries}{: Pandas, NumPy, Matplotlib, Data Cleansing, Exploratory Data Analysis (EDA), Stored Procedures} \\[2.5pt]
-     \textbf{Developer Tools \& Platforms}{: Git, GitHub, Puppeteer, Postman, VS Code, Linux/Bash, Vercel} \\[2.5pt]
+     \textbf{Data Analytics \& Libraries}{: Pandas, NumPy, Matplotlib, Data Cleansing, Exploratory Data Analysis (EDA), Statistical Analysis} \\[2.5pt]
+     \textbf{Developer Tools \& Platforms}{: Git, GitHub, Microsoft SQL Server, MySQL, Puppeteer, Postman, Linux/Bash, Vercel} \\[2.5pt]
      \textbf{Core Computer Science}{: Data Structures \& Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, Computer Networks}
     }}
  \end{itemize}
-\vspace{-6pt}
+\vspace{-4pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-        {\textbf{Enterprise SQL Data Warehouse \& ETL Pipeline} $|$ \emph{T-SQL, SQL Server, Medallion Architecture, Star Schema, ETL}}{\href{https://github.com/lavansh4725/sql-data-warehouse-project}{\underline{GitHub}}}
+        {Enterprise SQL Data Warehouse \& ETL Pipeline}
+        {Technologies: Microsoft SQL Server, T-SQL, Medallion Architecture, Kimball Star Schema, Stored Procedures, ETL}
+        {\href{https://github.com/lavansh4725/sql-data-warehouse-project}{\underline{GitHub}}}
         \resumeItemListStart
           \resumeItem{Architected a scalable dimensional data warehouse implementing \textbf{Medallion Architecture (Bronze $\rightarrow$ Silver $\rightarrow$ Gold)} on Microsoft SQL Server to ingest, cleanse, and structure transactional ERP datasets.}
-          \resumeItem{Engineered modular T-SQL stored procedures leveraging \texttt{BULK INSERT}, window functions (\texttt{LEAD}), and surrogate keys to transform raw records into Kimball Star Schema dimension and fact tables.}
-          \resumeItem{Established automated data quality test suites enforcing referential integrity, primary/foreign key constraints, null validation, and eliminating duplicate transactional records.}
+          \resumeItem{Engineered automated T-SQL stored procedures utilizing \texttt{BULK INSERT}, window functions (\texttt{LEAD}), and surrogate keys to transform raw staging records into Kimball Star Schema dimension and fact views.}
+          \resumeItem{Established comprehensive automated data quality test suites enforcing referential integrity, primary/foreign key constraints, null checks, and eliminating duplicate transactional records.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-        {\textbf{RoleReady AI — Full-Stack GenAI Interview Platform} $|$ \emph{React, Vite, Node.js, Express, MongoDB, Google GenAI, JWT}}{\href{https://github.com/lavansh4725/interview-ai}{\underline{GitHub}}}
+        {RoleReady AI — Full-Stack GenAI Interview Platform}
+        {Technologies: React, Vite, Node.js, Express, MongoDB, Google GenAI, JWT Authentication, Puppeteer, Zod}
+        {\href{https://github.com/lavansh4725/interview-ai}{\underline{GitHub}}}
         \resumeItemListStart
-          \resumeItem{Built a full-stack GenAI interview prep web platform analyzing candidate resume PDFs, user profiles, and target job descriptions via Google GenAI to generate personalized evaluation reports.}
-          \resumeItem{Engineered secure stateless JWT authentication, MongoDB persistence, Zod request payload validation, and modular RESTful APIs enabling candidates to track their preparation progress.}
-          \resumeItem{Integrated headless Chromium automation via \textbf{Puppeteer} to generate and export downloadable, ATS-compliant resume and performance review PDFs in under 3 seconds.}
+          \resumeItem{Built a full-stack GenAI interview prep web platform analyzing candidate resume PDFs, career profiles, and job descriptions using Google GenAI prompt pipelines to generate personalized readiness evaluations.}
+          \resumeItem{Engineered secure stateless JWT authentication, MongoDB data models, Zod request payload validation, and modular RESTful APIs enabling candidates to track preparation metrics over time.}
+          \resumeItem{Integrated headless Chromium automation via \textbf{Puppeteer} to dynamically render and export downloadable, ATS-compliant resume and performance review PDFs in under 3 seconds.}
         \resumeItemListEnd
 
     \resumeProjectHeading
-        {\textbf{Customer Shopping Behavior Analysis} $|$ \emph{Python, Pandas, NumPy, MySQL, Power BI, Matplotlib}}{\href{https://github.com/lavansh4725/customer-shopping-behavior-analysis}{\underline{GitHub}}}
+        {Customer Shopping Behavior Analysis}
+        {Technologies: Python, Pandas, NumPy, MySQL, Microsoft Power BI, Matplotlib, Exploratory Data Analysis}
+        {\href{https://github.com/lavansh4725/customer-shopping-behavior-analysis}{\underline{GitHub}}}
         \resumeItemListStart
-          \resumeItem{Cleaned and preprocessed 3,900+ retail consumer records using Python (\textbf{Pandas, NumPy}) and MySQL, executing statistical data cleansing, outlier detection, and missing value imputation.}
-          \resumeItem{Developed an interactive multi-page \textbf{Power BI dashboard} featuring dynamic demographic slicers, purchase frequency heatmaps, and category-level contribution matrices to guide commercial strategy.}
-          \resumeItem{Authored optimized SQL queries aggregating key revenue metrics, customer loyalty segments, and promotional discount elasticities to uncover actionable business drivers.}
+          \resumeItem{Curated and preprocessed 3,900+ retail consumer records using Python (\textbf{Pandas, NumPy}) and MySQL, executing statistical data cleansing, outlier detection, and missing value treatment.}
+          \resumeItem{Developed an interactive multi-page \textbf{Power BI dashboard} featuring dynamic demographic slicers, purchase frequency heatmaps, and category-level contribution matrices to guide product strategy.}
+          \resumeItem{Authored optimized SQL aggregation queries evaluating revenue metrics, customer loyalty segmentation, and promotional discount elasticities to uncover actionable business drivers.}
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-\vspace{-4pt}
+\vspace{-3pt}
 
 %-----------LICENSES & CERTIFICATIONS-----------
 \section{Licenses \& Certifications}
@@ -160,13 +168,13 @@
     \resumeItem{\textbf{Python Data Structures} -- \textbf{University of Michigan} $|$ \textbf{Project Initiation: Starting a Successful Project} -- \textbf{Google}}
     \resumeItem{\textbf{Tools for Data Science} \& \textbf{What is Data Science?} -- \textbf{IBM} $|$ \textbf{C++ Basics: Selection \& Iteration} -- \textbf{Codio}}
   \resumeSubHeadingListEnd
-\vspace{-4pt}
+\vspace{-3pt}
 
 %-----------HONORS & ACHIEVEMENTS-----------
 \section{Honors \& Academic Achievements}
   \resumeSubHeadingListStart
     \resumeItem{\textbf{Dean's List Recognition (2023)}: Formally awarded by Bennett University for achieving exceptional academic standing and maintaining a top CGPA in the Computer Science and Engineering department.}
-    \resumeItem{\textbf{Scholastic Excellence}: Secured \textbf{95.2\% in Class X} (Top 1\% cohort) and \textbf{83.6\% in Class XII} CBSE Board Examinations with distinction in Mathematics and Computer Science.}
+    \resumeItem{\textbf{Scholastic Excellence}: Secured \textbf{95.2\% in Class X} (Top 1\% of cohort) and \textbf{83.6\% in Class XII} CBSE Board Examinations with distinction in Mathematics and Computer Science.}
   \resumeSubHeadingListEnd
 
 \end{document}
